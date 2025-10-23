@@ -8,7 +8,7 @@ public class Question2{
 		
 		// Q1 解答
 		int score = 75;
-		if(score > 60) {
+		if(score >= 60) {
 			System.out.println("合格です！");
 		}
 		
@@ -158,8 +158,9 @@ public class Question2{
 			break;
 			
 			default : System.out.println("無効な入力です");
+
+			code.close();
 		}
-		
 		
 	}
 }
