@@ -6,13 +6,13 @@ public class Question2{
 
 	public static void main(String[] args) {
 		
-		// Q1 解答
+		// Q1 合否確認
 		int score = 75;
 		if(score >= 60) {
 			System.out.println("合格です！");
 		}
 		
-		// Q2 解答
+		// Q2 年齢確認
 		int age = 25;
 		if(20 <= age && age <= 30) {
 			System.out.println("適正年齢です");
@@ -21,7 +21,7 @@ public class Question2{
 			System.out.println("対象外です。");
 		}
 		
-		//Q3 解答
+		//Q3 成人判定
 		int age1 = 18;
 		if(age1 >= 20) {
 			System.out.println("成人です");
@@ -33,7 +33,7 @@ public class Question2{
 			System.out.println("子供です。");
 		}
 		
-		//Q4 解答
+		//Q4 最大数値を調べる
 		int x = 30;
 		int y = 15;
 		int z = 50;
@@ -52,7 +52,7 @@ public class Question2{
 			System.out.println(z);
 		}
 		
-		//Q5 解答
+		//Q5 正負判定
 		Random rand = new Random();
 		int num = rand.nextInt(8) - 4;
 		if(0 < num) {
@@ -65,7 +65,7 @@ public class Question2{
 			System.out.println("0です");
 		}
 		
-		//Q6 解答
+		//Q6 奇数偶数判定
 		int value = rand.nextInt(10) + 100;
 		if(value%2 == 0) {
 			System.out.println("偶数です");
@@ -74,7 +74,7 @@ public class Question2{
 			System.out.println("奇数です");
 		}
 		
-		//Q7 解答
+		//Q7 スコアに応じた成績判定
 		/*int[] score1 = new int[101];
 		for(int i = 0; i < 101; i++) {*/
 			int score1 = 88;
@@ -93,7 +93,7 @@ public class Question2{
 		
 	
 		
-		//Q8 解答
+		//Q8　無入力判定
 		Scanner code = new Scanner(System.in);
 		System.out.println("名前を入力してください");
 		String name = code.nextLine();
@@ -104,7 +104,7 @@ public class Question2{
 		
 		
 
-		//Q9	解答
+		//Q9	曜日判定
 		System.out.println("数値を入力してください");
 		int day = code.nextInt();
 		switch(day) {
@@ -132,7 +132,7 @@ public class Question2{
 			default : System.out.println("無効な入力です");
 		}
 		
-		//Q10 解答
+		//Q10 季節判定
 		System.out.println("暦を入力してください");
 		int month = code.nextInt();
 		switch(month) {
@@ -159,8 +159,7 @@ public class Question2{
 			
 			default : System.out.println("無効な入力です");
 
-			code.close();
 		}
-		
+		code.close();
 	}
 }
