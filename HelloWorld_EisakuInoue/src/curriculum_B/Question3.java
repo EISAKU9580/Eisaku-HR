@@ -108,6 +108,7 @@ public class Question3 {
 			
 		}
 		System.out.println("終了しました");
+		code.nextLine();
 		System.out.println("");
 		
 		
@@ -135,20 +136,19 @@ public class Question3 {
 
 		
 		// 商品の在庫を確認する。
-		Scanner scanner = new Scanner(System.in);
-        Random rand = new Random();
+        Random rand = new Random(); //ランダム
 
         System.out.println("商品を入力してください（複数入力する場合は「、」で区切る）:");
-        System.out.println("商品一覧: パソコン, 冷蔵庫, 扇風機, 洗濯機, 加湿器, テレビ, ディスプレイ,その他商品");
+        System.out.println("商品一覧: パソコン, 冷蔵庫, 扇風機, 洗濯機, 加湿器, テレビ, ディスプレイ");
 
-        String shohin = scanner.nextLine();
-        String[] products = shohin.split("、");
+        String shohin = code.nextLine(); 
+        String[] products = shohin.split("、"); 
 
-        int TV = rand.nextInt(12); 
-        int display = 11 - TV;
+        int TV = rand.nextInt(12); //テレビの台数を先に指定
+        int display = 11 - TV;	//テレビに対しての台数を判定
 
-        for (String P : products) {
-            String product = P.trim(); 
+        for (String p : products) { //拡張for文
+            String product = p.trim(); 
 
             switch (product) {
                 case "パソコン":
@@ -162,20 +162,17 @@ public class Question3 {
 
                 case "テレビ":
                 case "ディスプレイ":
-                    int Zaiko = P.equals("テレビ") ? TV : display;
-                    System.out.println(product + "の残り台数は" + Zaiko + "台です。");
+                    int zaiko = p.equals("テレビ") ? TV : display;
+                    System.out.println(product + "の残り台数は" + zaiko + "台です。");
                     break;
-
-                case "その他商品":
-                	System.out.print("『その他商品』は指定の商品ではありません");
                     
                 default:
-                    System.out.println("受け取った値は指定の商品ではありません。");
+                    System.out.println(product+ "は指定の商品ではありません。");
                     break;
             }
         }
 
-        scanner.close();
+        code.close();
 		
       
 	}
