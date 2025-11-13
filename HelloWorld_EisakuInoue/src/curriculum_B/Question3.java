@@ -102,7 +102,7 @@ public class Question3 {
 			System.out.println("数値を入力してください");
 		int a;
 		a = code.nextInt();
-		while(a > 0 || 0 > a) {
+		while(a!= 0) {			
 			System.out.println("再度数値を入力してください");
 			a = code.nextInt();
 			
@@ -114,19 +114,15 @@ public class Question3 {
 		
 		// 九九表作り
 		System.out.println("Q11");
-		int d = 1;
-		int b = 1;
 		
-		for(int ii = 1; ii <= 9; ii++) 
+		for(int d = 1; d <= 9; d++) 
 		{
-			for(int j = 1; j <= 9; j++) 
+			for(int b = 1; b <= 9; b++) 
 			{
-				d = ii;
-				b = j;
 				int A = d*b;
 				System.out.printf
 				(String.format("%02d", d) + " * " + String.format("%02d", b) + " = " + String.format("%02d", A) + " ");
-				if(j < 9) {
+				if(b < 9) {
 				System.out.print("|| ");
 				}
 			}
@@ -162,7 +158,7 @@ public class Question3 {
 
                 case "テレビ":
                 case "ディスプレイ":
-                    int zaiko = p.equals("テレビ") ? TV : display;
+                    int zaiko = product.equals("テレビ") ? TV : display;
                     System.out.println(product + "の残り台数は" + zaiko + "台です。");
                     break;
                     
