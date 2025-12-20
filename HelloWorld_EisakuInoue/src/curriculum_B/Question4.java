@@ -43,16 +43,12 @@ public class Question4
 		int min = ave[0];
 		
 		for(int a : ave) {
-			if(a > max)
-				max = a;
+			if(a > max)max = a;
+			if(a < min)min = a;
 		}
 		System.out.println("最大値は" + max);
-		
-		for(int a : ave) {
-			if(a < min)
-				min = a;
-		}
 		System.out.println("最小値は" + min);
+		
 		System.out.println("");//設問の間をわかりやすくするための改行
 		
 		//Q5 数字を格納＋全て2倍
