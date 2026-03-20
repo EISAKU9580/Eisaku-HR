@@ -5,7 +5,7 @@ public class Main {
 		me player = new me();
 		CPU cpu = new CPU();
 		
-		while(true) {
+		while(true) {//aaaaaaaaa
 			
 		}
 	}
