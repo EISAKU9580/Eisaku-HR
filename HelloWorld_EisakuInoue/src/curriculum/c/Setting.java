@@ -1,9 +1,9 @@
 package curriculum.c;
 
 public class Setting {
-	int Rock = 0;
-	int Scissors = 1;
-	int Paper = 2;
+	static final int Rock = 0;
+	static final int Scissors = 1;
+	static final int Paper = 2;
 	
 	static String toString(int Set) {
 		switch(Set) {
