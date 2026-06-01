@@ -9,10 +9,10 @@ public class Person {
 	
 
     Person(String name, int age, double height,  double weight){
-		this.name = "井上英作";
-		this.age = 25;
-		this.height = 171;
-		this.weight = 75;
+		this.name = name;
+		this.age = age;
+		this.height = height;
+		this.weight = weight;
 		count++;
 	  }
   
